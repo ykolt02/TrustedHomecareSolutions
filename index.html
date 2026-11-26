@@ -242,6 +242,7 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 </div>
 <div data-if="mainNotSent" style="display: contents">
 <form data-form="main" style="display: flex; flex-direction: column; gap: 20px">
+<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important">
 <div style="display: flex; flex-wrap: wrap; gap: 20px">
 <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
 <label for="m-first" style="font-weight: 600; font-size: 16px">First name</label>
@@ -367,6 +368,7 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 </div>
 <div data-if="careNotSent" style="display: contents">
 <form data-form="care" style="display: flex; flex-direction: column; gap: 18px">
+<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important">
 <p style="margin: 0; font-size: 17px; color: #4B5466">Tell us what kind of help you need and we'll reach out.</p>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="c-type" style="font-weight: 600; font-size: 16px">Type of care</label>
@@ -424,6 +426,7 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 </div>
 <div data-if="jobNotSent" style="display: contents">
 <form data-form="job" style="display: flex; flex-direction: column; gap: 18px">
+<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important">
 <p style="margin: 0; font-size: 17px; color: #4B5466">Join our team of home health aides, personal care aides, nurses and LPNs. It only takes a minute.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 16px">
 <div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
@@ -473,15 +476,8 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 </select>
 </div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="j-certfile" style="font-weight: 600; font-size: 16px">Upload your certification or license (PCA, HHA, RN or LPN)</label>
-<input id="j-certfile" name="certification" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required style="width: 100%; min-height: 56px; padding: 14px; border: 1.5px dashed #8A8170; border-radius: 12px; font-family: inherit; font-size: 16px; color: #031935; background: #faf6ef; cursor: pointer">
-<span style="font-size: 14px; color: #4B5466">PDF, Word document or a photo of your certificate</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="j-resume" style="font-weight: 600; font-size: 16px">Upload your resume (optional)</label>
-<input id="j-resume" name="resume" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" style="width: 100%; min-height: 56px; padding: 14px; border: 1.5px dashed #8A8170; border-radius: 12px; font-family: inherit; font-size: 16px; color: #031935; background: #faf6ef; cursor: pointer">
-<span style="font-size: 14px; color: #4B5466">PDF, Word document or a photo</span>
+<div style="background: #faf6ef; border: 1px solid #E6E1D6; border-radius: 12px; padding: 14px 16px; font-size: 15px; color: #4B5466">
+<strong style="color: #031935">Certification and resume:</strong> Please submit this application first. Our recruiting team will contact you with instructions for securely providing copies of your certification, license, or resume. Please do not send sensitive documents by text message.
 </div>
 <div><button type="submit" style="min-height: 56px; padding: 0 36px; border-radius: 999px; background: #C9A060; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; cursor: pointer">Submit application</button></div>
 </form>
@@ -493,11 +489,9 @@ input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{out
 </div>
 
 <script>
-/* Form delivery: paste your form service address between the quotes below
-   (for example a Formspree or Web3Forms endpoint). While it is empty, the
-   forms show the thank-you message but do not send anything. */
-var FORM_ENDPOINT = "";
-var FORM_EXTRA_FIELDS = {}; /* e.g. {"access_key": "..."} for Web3Forms */
+/* Web3Forms configuration */
+var FORM_ENDPOINT = "https://api.web3forms.com/submit";
+var WEB3FORMS_ACCESS_KEY = "0f238458-c22d-4eb0-bb18-4fc2abe1a053";
 
 (function () {
   var state = { menu: null, modal: null, mainSent: false, careSent: false, jobSent: false };
@@ -543,19 +537,49 @@ var FORM_EXTRA_FIELDS = {}; /* e.g. {"access_key": "..."} for Web3Forms */
   document.querySelectorAll('form[data-form]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+
       var which = form.getAttribute('data-form');
-      var done = function () { var p = {}; p[which + 'Sent'] = true; set(p); form.reset(); };
-      if (!FORM_ENDPOINT) { done(); return; }
+      var done = function () {
+        var patch = {};
+        patch[which + 'Sent'] = true;
+        set(patch);
+        form.reset();
+      };
+
       var data = new FormData(form);
-      data.append('form', NAMES[which] || which);
-      data.append('subject', 'New website submission: ' + (NAMES[which] || which));
-      for (var k in FORM_EXTRA_FIELDS) data.append(k, FORM_EXTRA_FIELDS[k]);
-      var btn = form.querySelector('button[type="submit"]'); var label = btn ? btn.textContent : '';
-      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
-      fetch(FORM_ENDPOINT, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); done(); })
-        .catch(function () { alert('Sorry, something went wrong sending your form. Please call us at (845) 604-3638.'); })
-        .then(function () { if (btn) { btn.disabled = false; btn.textContent = label; } });
+      data.set('access_key', WEB3FORMS_ACCESS_KEY);
+      data.set('subject', 'New website submission: ' + (NAMES[which] || which));
+      data.set('form', NAMES[which] || which);
+
+      var btn = form.querySelector('button[type="submit"]');
+      var label = btn ? btn.textContent : '';
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+      }
+
+      fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        body: data
+      })
+        .then(function (response) {
+          return response.json().then(function (result) {
+            if (!response.ok || !result.success) {
+              throw new Error(result.message || 'Submission failed');
+            }
+            done();
+          });
+        })
+        .catch(function (error) {
+          console.error('Web3Forms submission error:', error);
+          alert('Sorry, your form could not be sent. Please try again or call us at (845) 604-3638.');
+        })
+        .then(function () {
+          if (btn) {
+            btn.disabled = false;
+            btn.textContent = label;
+          }
+        });
     });
   });
   render();
