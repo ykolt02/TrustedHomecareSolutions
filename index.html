@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trusted Home Care Solutions | Private Pay Home Care</title>
+<meta name="description" content="Short-term or long-term private pay home care with caregivers your family can count on. Need Medicaid? We'll handle your application for free.">
+<meta property="og:title" content="Trusted Home Care Solutions">
+<meta property="og:description" content="Compassion. Quality. Peace of mind. Private pay home care, plus free help with your Medicaid application.">
+<meta property="og:image" content="images/hero-caregiver-woman.jpg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Montserrat:wght@500;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+a{color:#031935}a:hover{color:#7E5A1E}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid #C9A060;outline-offset:2px}
+</style>
+<style>[hidden]{display:none !important}</style>
+</head>
+<body>
+<div id="top" style="font-family: 'Source Sans 3', system-ui, sans-serif; color: #031935; background: #FFFFFF; font-size: 18px; line-height: 1.6; min-width: 0">
+
+<!-- Top bar -->
+<div style="background: #021225; color: #FFFFFF; font-size: 15px">
+<div style="max-width: 1320px; margin: 0 auto; padding: 8px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 6px 24px; align-items: center; justify-content: space-between">
+<a href="tel:+18456043638" style="color: #FFFFFF; font-weight: 700; text-decoration: none; display: inline-flex; gap: 8px; align-items: center; padding: 6px 0">
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"></path></svg>
+(845) 604-3638</a>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center">
+<button type="button" data-action="openCare" style="min-height: 36px; padding: 0 16px; border-radius: 999px; background: #FFFFFF; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 14px; cursor: pointer">Receive Services</button>
+<button type="button" data-action="openJob" style="min-height: 36px; padding: 0 16px; border-radius: 999px; background: #C9A060; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 14px; cursor: pointer">Become a Caregiver</button>
+</div>
+</div>
+</div>
+
+<!-- Header -->
+<header style="background: #FFFFFF; border-bottom: 1px solid #E6E1D6; position: relative; z-index: 20">
+<div style="max-width: 1320px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<a href="#top" aria-label="Trusted Home Care Solutions, home" style="display: flex; align-items: center; text-decoration: none">
+<img src="images/header-logo.png" alt="Trusted Home Care Solutions" style="height: 58px; width: auto; display: block">
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px; font-weight: 600; font-size: 16px">
+<a href="#top" style="color: #031935; text-decoration: none; padding: 10px 0">Home</a>
+<div style="position: relative">
+<button type="button" data-action="toggleServices" aria-expanded="false" data-expanded="servicesOpen" style="display: inline-flex; align-items: center; gap: 4px; min-height: 44px; padding: 0; background: none; border: 0; font-family: inherit; font-weight: 600; font-size: 16px; color: #031935; cursor: pointer">Receive Services
+<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+<div data-if="servicesOpen" style="display: contents">
+<div style="position: absolute; top: 100%; left: -16px; min-width: 250px; background: #FFFFFF; border: 1px solid #E6E1D6; border-radius: 14px; box-shadow: 0 16px 40px rgba(3, 25, 53, 0.16); padding: 8px; display: flex; flex-direction: column">
+<a href="#services" data-action="closeMenu" style="color: #031935; text-decoration: none; padding: 10px 14px; border-radius: 8px">Home Health Aides</a>
+<a href="#services" data-action="closeMenu" style="color: #031935; text-decoration: none; padding: 10px 14px; border-radius: 8px">Personal Care Aides</a>
+<a href="#services" data-action="closeMenu" style="color: #031935; text-decoration: none; padding: 10px 14px; border-radius: 8px">Private Duty Nursing</a>
+<a href="#services" data-action="closeMenu" style="color: #031935; text-decoration: none; padding: 10px 14px; border-radius: 8px">[Other service]</a>
+</div>
+</div>
+</div>
+<div style="position: relative">
+<button type="button" data-action="toggleCareers" aria-expanded="false" data-expanded="careersOpen" style="display: inline-flex; align-items: center; gap: 4px; min-height: 44px; padding: 0; background: none; border: 0; font-family: inherit; font-weight: 600; font-size: 16px; color: #031935; cursor: pointer">Careers
+<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+<div data-if="careersOpen" style="display: contents">
+<div style="position: absolute; top: 100%; left: -16px; min-width: 250px; background: #FFFFFF; border: 1px solid #E6E1D6; border-radius: 14px; box-shadow: 0 16px 40px rgba(3, 25, 53, 0.16); padding: 8px; display: flex; flex-direction: column">
+<button type="button" data-action="openJob" style="text-align: left; background: none; border: 0; font-family: inherit; font-size: 16px; font-weight: 600; color: #031935; padding: 10px 14px; border-radius: 8px; cursor: pointer">Home Health Aides</button>
+<button type="button" data-action="openJob" style="text-align: left; background: none; border: 0; font-family: inherit; font-size: 16px; font-weight: 600; color: #031935; padding: 10px 14px; border-radius: 8px; cursor: pointer">Personal Care Aides</button>
+<button type="button" data-action="openJob" style="text-align: left; background: none; border: 0; font-family: inherit; font-size: 16px; font-weight: 600; color: #031935; padding: 10px 14px; border-radius: 8px; cursor: pointer">Nurses &amp; LPNs</button>
+<button type="button" data-action="openJob" style="text-align: left; background: none; border: 0; font-family: inherit; font-size: 16px; font-weight: 600; color: #031935; padding: 10px 14px; border-radius: 8px; cursor: pointer">Training &amp; certification</button>
+</div>
+</div>
+</div>
+<a href="#contact" style="color: #031935; text-decoration: none; padding: 10px 0">Contact Us</a>
+</nav>
+</div>
+</header>
+
+<!-- Hero -->
+<section style="background: #faf6ef">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(20px, 4vw, 48px) 168px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: #7E5A1E">Compassion. Quality. Peace of mind.</p>
+<h1 style="margin: 0; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: clamp(34px, 4.4vw, 54px); line-height: 1.14; letter-spacing: -0.01em; color: #031935">The comfort of home. The care you can trust.</h1>
+<p style="margin: 0; font-size: 20px; color: #3C4658; max-width: 540px">Short-term or long-term private pay home care, with caregivers your family can count on. Need Medicaid? We'll handle your application for free.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 4px">
+<button type="button" data-action="openCare" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 30px; border-radius: 999px; background: #C9A060; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; cursor: pointer">Request Care
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+<button type="button" data-action="openJob" style="display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 28px; border-radius: 999px; background: #FFFFFF; color: #031935; border: 2px solid #031935; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; cursor: pointer">Become a Caregiver</button>
+</div>
+</div>
+<img src="images/hero-caregiver-woman.jpg" alt="A caregiver going over a care plan on a tablet with a senior woman and her daughter at home" style="flex: 1 1 420px; min-width: 0; width: 100%; height: 460px; object-fit: cover; object-position: 40% center; border-radius: 24px; display: block; box-shadow: 0 20px 48px rgba(3, 25, 53, 0.14)">
+</div>
+</section>
+
+<!-- Four feature tiles -->
+<section aria-label="How we help" style="position: relative; z-index: 1; margin-top: -112px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 20px">
+<a href="#insurance" style="flex: 1 1 240px; min-width: 0; background: #FFFFFF; border: 1px solid #E6E1D6; border-radius: 20px; box-shadow: 0 14px 36px rgba(3, 25, 53, 0.10); padding: 28px; display: flex; flex-direction: column; gap: 12px; color: #031935; text-decoration: none">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1"></path><path d="M9 13l2 2 4-4"></path></svg></span>
+<span style="font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 21px">Eligibility</span>
+<span style="font-size: 17px; color: #4B5466">We handle your Medicaid application for free, start to finish.</span>
+</a>
+<a href="#about" style="flex: 1 1 240px; min-width: 0; background: #FFFFFF; border: 1px solid #E6E1D6; border-radius: 20px; box-shadow: 0 14px 36px rgba(3, 25, 53, 0.10); padding: 28px; display: flex; flex-direction: column; gap: 12px; color: #031935; text-decoration: none">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span>
+<span style="font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 21px">Care</span>
+<span style="font-size: 17px; color: #4B5466">A personal plan built around your loved one's needs.</span>
+</a>
+<a href="#services" style="flex: 1 1 240px; min-width: 0; background: #FFFFFF; border: 1px solid #E6E1D6; border-radius: 20px; box-shadow: 0 14px 36px rgba(3, 25, 53, 0.10); padding: 28px; display: flex; flex-direction: column; gap: 12px; color: #031935; text-decoration: none">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></svg></span>
+<span style="font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 21px">Home Care Services</span>
+<span style="font-size: 17px; color: #4B5466">Aides and nurses who come to you, when you need them.</span>
+</a>
+<a href="#contact" style="flex: 1 1 240px; min-width: 0; background: #FFFFFF; border: 1px solid #E6E1D6; border-radius: 20px; box-shadow: 0 14px 36px rgba(3, 25, 53, 0.10); padding: 28px; display: flex; flex-direction: column; gap: 12px; color: #031935; text-decoration: none">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1"></path><rect x="3" y="13" width="4" height="6" rx="1.5"></rect><rect x="17" y="13" width="4" height="6" rx="1.5"></rect><path d="M19 19c0 1.5-2 2.5-5 2.5"></path></svg></span>
+<span style="font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 21px">Support</span>
+<span style="font-size: 17px; color: #4B5466">A care coordinator by your side at every step.</span>
+</a>
+</div>
+</section>
+
+<!-- Affordability -->
+<section id="insurance" style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<img loading="lazy" src="images/caregiver-man-client.jpg" alt="A smiling caregiver holding the hand of an elderly man in his living room" style="flex: 1 1 440px; min-width: 0; width: 100%; height: 480px; object-fit: cover; object-position: 50% center; border-radius: 24px; display: block">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #7E5A1E">Payment options</p>
+<h2 style="margin: 0; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: clamp(28px, 3vw, 40px); line-height: 1.2; letter-spacing: -0.005em">Private pay home care, short-term or long-term</h2>
+<p style="margin: 0; font-size: 19px; color: #3C4658">Start care right away with a simple private pay plan, for as long or as short as you need. Planning to use Medicaid? We'll handle your Medicaid application for free while your loved one gets the care they need.</p>
+<div style="display: flex; flex-direction: column; gap: 12px; margin-top: 6px">
+<div style="display: flex; gap: 16px; align-items: flex-start; background: #FFFFFF; border: 1px solid #E6E1D6; border-radius: 16px; padding: 18px 20px">
+<span style="flex: none; width: 44px; height: 44px; border-radius: 12px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px"><h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 19px">Long-term private pay</h3><p style="margin: 0; font-size: 17px; color: #4B5466">Ongoing care on a schedule that fits your family, from a few hours a week to 24/7.</p></div>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start; background: #FFFFFF; border: 1px solid #E6E1D6; border-radius: 16px; padding: 18px 20px">
+<span style="flex: none; width: 44px; height: 44px; border-radius: 12px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px"><h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 19px">Short-term private pay</h3><p style="margin: 0; font-size: 17px; color: #4B5466">Care that starts now, while your Medicaid application is being processed.</p></div>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start; background: #C9A060; border-radius: 16px; padding: 18px 20px; color: #031935">
+<span style="flex: none; width: 44px; height: 44px; border-radius: 12px; background: #FFFFFF; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1"></path><path d="M9 13l2 2 4-4"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 2px"><h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 19px">Free Medicaid application help</h3><p style="margin: 0; font-size: 17px; color: #031935">We handle the paperwork and follow-up for you, at no cost.</p></div>
+</div>
+</div>
+<div style="margin-top: 6px">
+<a href="#contact" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 30px; border-radius: 999px; background: #031935; color: #FFFFFF; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; text-decoration: none">Get Started
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section id="about" style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: 56px">
+<div style="flex: 0 1 auto; width: fit-content; max-width: 100%; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #7E5A1E">About us</p>
+<h2 style="margin: 0; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: clamp(28px, 3vw, 40px); line-height: 1.2; letter-spacing: -0.005em">Care that feels like family</h2>
+<p style="margin: 0; width: 0; min-width: 100%; font-size: 19px; color: #3C4658">At Trusted Home Care Solutions, we believe there’s no place like home. Our mission is to help seniors and individuals who need extra support remain safe, comfortable, and independent in the place they love most. Through compassionate caregivers, personalized care plans, and a commitment to exceptional service, we provide more than just care. We provide families with confidence, comfort, and peace of mind, knowing their loved ones are in trusted hands.</p>
+</div>
+<ul style="flex: 1 1 380px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px">
+<li style="display: flex; gap: 16px; align-items: flex-start; background: #faf6ef; border-radius: 16px; padding: 22px 24px">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 12px; background: #FFFFFF; color: #7E5A1E; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 20px">Compassion</h3><p style="margin: 0; font-size: 17px; color: #4B5466">We treat every client like family, with patience, dignity and respect.</p></div>
+</li>
+<li style="display: flex; gap: 16px; align-items: flex-start; background: #faf6ef; border-radius: 16px; padding: 22px 24px">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 12px; background: #FFFFFF; color: #7E5A1E; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 20px">Quality</h3><p style="margin: 0; font-size: 17px; color: #4B5466">Screened, trained caregivers, with a nurse overseeing every care plan.</p></div>
+</li>
+<li style="display: flex; gap: 16px; align-items: flex-start; background: #faf6ef; border-radius: 16px; padding: 22px 24px">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 12px; background: #FFFFFF; color: #7E5A1E; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></svg></span>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 20px">Peace of mind</h3><p style="margin: 0; font-size: 17px; color: #4B5466">Reliable schedules, clear communication and a team you can always reach.</p></div>
+</li>
+</ul>
+</div>
+</section>
+
+<!-- Service cards -->
+<section id="services" style="background: #faf6ef">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) clamp(20px, 4vw, 48px); display: flex; flex-direction: column; align-items: center; gap: 48px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; max-width: 720px; text-align: center">
+<p style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #7E5A1E">Home care services</p>
+<h2 style="margin: 0; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: clamp(28px, 3vw, 40px); line-height: 1.2; letter-spacing: -0.005em">The right help, from people who care</h2>
+<p style="margin: 0; font-size: 19px; color: #3C4658">From a few hours a week to round-the-clock support, we match every client with the level of care they need.</p>
+</div>
+<div style="width: 100%; display: flex; flex-wrap: wrap; gap: 24px">
+<article style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<img loading="lazy" src="images/companionship.jpg" alt="A caregiver and an elderly man laughing together over a photo album" style="width: 100%; height: 220px; object-fit: cover; object-position: 50% 30%; display: block">
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 22px">Companionship</h3>
+<p style="margin: 0; font-size: 17px; color: #4B5466">Friendly company, conversation, activities and outings that keep your loved one engaged, connected and happy at home.</p>
+<a href="#contact" style="margin-top: auto; padding-top: 6px; font-weight: 700; font-size: 17px; display: inline-flex; align-items: center; gap: 6px">Learn more <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<img loading="lazy" src="images/personal-care-aide.jpg" alt="A caregiver handing a cup of tea to a smiling elderly woman at home" style="width: 100%; height: 220px; object-fit: cover; object-position: 50% 30%; display: block">
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 22px">Personal Care Aide</h3>
+<p style="margin: 0; font-size: 17px; color: #4B5466">Everyday support with bathing, dressing, meals, light housekeeping and friendly companionship.</p>
+<a href="#contact" style="margin-top: auto; padding-top: 6px; font-weight: 700; font-size: 17px; display: inline-flex; align-items: center; gap: 6px">Learn more <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column">
+<img loading="lazy" src="images/private-duty-nurse.jpg" alt="A smiling nurse checking an elderly woman's blood pressure at home" style="width: 100%; height: 220px; object-fit: cover; object-position: 50% 30%; display: block">
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 22px">Private Duty Nurse</h3>
+<p style="margin: 0; font-size: 17px; color: #4B5466">One-on-one skilled nursing at home for clients with complex medical needs, by the hour or around the clock.</p>
+<a href="#contact" style="margin-top: auto; padding-top: 6px; font-weight: 700; font-size: 17px; display: inline-flex; align-items: center; gap: 6px">Learn more <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+</div>
+<a href="#services" style="display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 30px; border-radius: 999px; background: #FFFFFF; color: #031935; border: 2px solid #031935; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; text-decoration: none">View all home care services</a>
+</div>
+</section>
+
+<!-- Contact form -->
+<section id="contact" style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #7E5A1E">Contact us</p>
+<h2 style="margin: 0; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: clamp(28px, 3vw, 40px); line-height: 1.2; letter-spacing: -0.005em">Ready to begin? We'll make it quick and easy.</h2>
+<p style="margin: 0; font-size: 19px; color: #3C4658">Fill out the form and a care coordinator will call you to answer your questions and schedule a free in-home assessment.</p>
+<ul style="list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 20px">
+<li style="display: flex; gap: 14px; align-items: flex-start">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"></path></svg></span>
+<span style="display: flex; flex-direction: column; line-height: 1.4"><span style="font-size: 15px; color: #4B5466">Call us</span><strong style="font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 20px"><a href="tel:+18456043638" style="color: inherit; text-decoration: none">(845) 604-3638</a></strong></span>
+</li>
+<li style="display: flex; gap: 14px; align-items: flex-start">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9V3h10v6"></path><rect x="3" y="9" width="18" height="8" rx="2"></rect><path d="M7 14h10v7H7z"></path></svg></span>
+<span style="display: flex; flex-direction: column; line-height: 1.4"><span style="font-size: 15px; color: #4B5466">Fax</span><strong style="font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 20px">(845) 888-7282</strong></span>
+</li>
+<li style="display: flex; gap: 14px; align-items: flex-start">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3.5 6.5l8.5 6.5 8.5-6.5"></path></svg></span>
+<span style="display: flex; flex-direction: column; line-height: 1.4"><span style="font-size: 15px; color: #4B5466">Email</span><a href="mailto:intake@trustedhcsolutions.com" style="font-weight: 700; font-size: 18px; color: #031935; overflow-wrap: anywhere">intake@trustedhcsolutions.com</a></span>
+</li>
+</ul>
+</div>
+<div style="flex: 2 1 560px; min-width: 0; background: #faf6ef; border-radius: 24px; padding: clamp(24px, 4vw, 44px)">
+<div data-if="mainSent" style="display: contents">
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start; padding: 24px 0">
+<span style="width: 64px; height: 64px; border-radius: 999px; background: #C9A060; color: #031935; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<h3 style="margin: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 700; font-size: 26px">Thank you. We've received your request.</h3>
+<p style="margin: 0; font-size: 18px; color: #3C4658">A care coordinator will contact you soon. If you need help right away, call (845) 604-3638.</p>
+<button type="button" data-action="resetMain" style="min-height: 48px; padding: 0 22px; border-radius: 999px; background: #FFFFFF; color: #031935; border: 2px solid #031935; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 16px; cursor: pointer">Send another request</button>
+</div>
+</div>
+<div data-if="mainNotSent" style="display: contents">
+<form data-form="main" style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="m-first" style="font-weight: 600; font-size: 16px">First name</label>
+<input id="m-first" name="first" type="text" autocomplete="given-name" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="m-last" style="font-weight: 600; font-size: 16px">Last name</label>
+<input id="m-last" name="last" type="text" autocomplete="family-name" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="m-phone" style="font-weight: 600; font-size: 16px">Phone</label>
+<input id="m-phone" name="phone" type="tel" autocomplete="tel" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="m-email" style="font-weight: 600; font-size: 16px">Email</label>
+<input id="m-email" name="email" type="email" autocomplete="email" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="m-address" style="font-weight: 600; font-size: 16px">Street address</label>
+<input id="m-address" name="address" type="text" autocomplete="street-address" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="m-city" style="font-weight: 600; font-size: 16px">City</label>
+<input id="m-city" name="city" type="text" autocomplete="address-level2" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="flex: 1 1 140px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="m-zip" style="font-weight: 600; font-size: 16px">ZIP code</label>
+<input id="m-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="m-who" style="font-weight: 600; font-size: 16px">Who is the care for?</label>
+<select id="m-who" name="who" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+<option>Parent</option>
+<option>Spouse or partner</option>
+<option>Myself</option>
+<option>Child</option>
+<option>Other relative</option>
+<option>Friend</option>
+<option>Patient (I'm a professional)</option>
+<option>Other</option>
+</select>
+</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="m-source" style="font-weight: 600; font-size: 16px">How did you hear about us?</label>
+<select id="m-source" name="source" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+<option>Google search</option>
+<option>Facebook or Instagram</option>
+<option>Friend or family</option>
+<option>Doctor or hospital</option>
+<option>Social worker</option>
+<option>Insurance plan</option>
+<option>Flyer or newspaper</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px">
+<legend style="font-weight: 600; font-size: 16px; padding: 0; margin-bottom: 6px">Do you live in New York State?</legend>
+<label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px; cursor: pointer"><input type="radio" name="ny" value="yes" style="width: 22px; height: 22px; margin: 0; accent-color: #031935">Yes</label>
+<label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 17px; cursor: pointer"><input type="radio" name="ny" value="no" style="width: 22px; height: 22px; margin: 0; accent-color: #031935">No</label>
+</fieldset>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="m-comments" style="font-weight: 600; font-size: 16px">Comments</label>
+<textarea id="m-comments" name="comments" rows="4" style="width: 100%; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF; resize: vertical"></textarea>
+</div>
+<label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: #3C4658; line-height: 1.5; cursor: pointer"><input type="checkbox" name="sms" style="flex: none; width: 22px; height: 22px; margin: 1px 0 0; accent-color: #031935"><span>I agree to receive text messages from Trusted Home Care Solutions about my request. Reply STOP to opt out. See our <a href="#top">Privacy Policy</a> and <a href="#top">Terms and Conditions</a>.</span></label>
+<div>
+<button type="submit" style="min-height: 56px; padding: 0 40px; border-radius: 999px; background: #C9A060; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; cursor: pointer">Submit</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer style="background: #021225; color: #DDE3EC; font-size: 16px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px clamp(20px, 4vw, 48px) 32px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 56px">
+<div style="flex: 1.4 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<a href="#top" aria-label="Trusted Home Care Solutions, back to top" style="display: block; text-decoration: none">
+<img loading="lazy" src="images/footer-logo-white.png" alt="Trusted Home Care Solutions. Compassion. Quality. Peace of mind." style="height: 150px; width: auto; display: block">
+</a>
+<nav aria-label="Social media (footer)" style="display: flex; flex-wrap: wrap; gap: 4px 18px">
+<a href="#top" style="color: #FFFFFF; padding: 6px 0">Facebook</a>
+<a href="#top" style="color: #FFFFFF; padding: 6px 0">Instagram</a>
+<a href="#top" style="color: #FFFFFF; padding: 6px 0">LinkedIn</a>
+</nav>
+</div>
+<nav aria-label="Quick links" style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0 0 4px; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 600; font-size: 16px; color: #FFFFFF">Quick links</h2>
+<a href="#top" style="color: #DDE3EC; text-decoration: none">Home</a>
+<a href="#services" style="color: #DDE3EC; text-decoration: none">Receive Services</a>
+<button type="button" data-action="openJob" style="align-self: flex-start; padding: 0; background: none; border: 0; font-family: inherit; font-size: 16px; line-height: 1.6; color: #DDE3EC; text-align: left; cursor: pointer">Careers</button>
+<a href="#contact" style="color: #DDE3EC; text-decoration: none">Contact Us</a>
+</nav>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.18); padding-top: 24px; display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; font-size: 15px; color: #B4BDCB">
+<span>© 2026 Trusted Home Care Solutions. All rights reserved.</span>
+</div>
+</div>
+</footer>
+
+<!-- Popup: Request care -->
+<div data-if="careOpen" style="display: contents">
+<div style="position: fixed; inset: 0; z-index: 50; background: rgba(3, 15, 30, 0.55); display: flex; justify-content: center; align-items: flex-start; padding: 48px 16px; overflow-y: auto">
+<div role="dialog" aria-modal="true" aria-labelledby="care-title" style="width: 100%; max-width: 620px; background: #FFFFFF; border-radius: 24px; padding: clamp(24px, 4vw, 40px); box-shadow: 0 24px 64px rgba(3, 15, 30, 0.3); display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px">
+<h2 id="care-title" style="margin: 0; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: 28px; line-height: 1.2">Request home care</h2>
+<button type="button" data-action="closeModal" aria-label="Close" style="flex: none; width: 44px; height: 44px; border-radius: 999px; border: 0; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<div data-if="careSent" style="display: contents">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 19px; color: #3C4658">Thank you. A care coordinator will call you soon to talk about next steps.</p>
+<div><button type="button" data-action="closeModal" style="min-height: 52px; padding: 0 28px; border-radius: 999px; background: #C9A060; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; cursor: pointer">Close</button></div>
+</div>
+</div>
+<div data-if="careNotSent" style="display: contents">
+<form data-form="care" style="display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-size: 17px; color: #4B5466">Tell us what kind of help you need and we'll reach out.</p>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="c-type" style="font-weight: 600; font-size: 16px">Type of care</label>
+<select id="c-type" name="type" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+<option>Home Health Aide</option>
+<option>Personal Care Aide</option>
+<option>Private Duty Nurse</option>
+<option>Other</option>
+</select>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="c-first" style="font-weight: 600; font-size: 16px">First name</label>
+<input id="c-first" name="first" type="text" autocomplete="given-name" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="c-last" style="font-weight: 600; font-size: 16px">Last name</label>
+<input id="c-last" name="last" type="text" autocomplete="family-name" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="c-phone" style="font-weight: 600; font-size: 16px">Phone</label>
+<input id="c-phone" name="phone" type="tel" autocomplete="tel" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="flex: 1 1 140px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="c-zip" style="font-weight: 600; font-size: 16px">ZIP code</label>
+<input id="c-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="c-email" style="font-weight: 600; font-size: 16px">Email</label>
+<input id="c-email" name="email" type="email" autocomplete="email" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div><button type="submit" style="min-height: 56px; padding: 0 36px; border-radius: 999px; background: #C9A060; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; cursor: pointer">Send request</button></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Popup: Become a caregiver -->
+<div data-if="jobOpen" style="display: contents">
+<div style="position: fixed; inset: 0; z-index: 50; background: rgba(3, 15, 30, 0.55); display: flex; justify-content: center; align-items: flex-start; padding: 48px 16px; overflow-y: auto">
+<div role="dialog" aria-modal="true" aria-labelledby="job-title" style="width: 100%; max-width: 620px; background: #FFFFFF; border-radius: 24px; padding: clamp(24px, 4vw, 40px); box-shadow: 0 24px 64px rgba(3, 15, 30, 0.3); display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px">
+<h2 id="job-title" style="margin: 0; font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700; font-size: 28px; line-height: 1.2">Become a caregiver</h2>
+<button type="button" data-action="closeModal" aria-label="Close" style="flex: none; width: 44px; height: 44px; border-radius: 999px; border: 0; background: #faf6ef; color: #031935; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<div data-if="jobSent" style="display: contents">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 19px; color: #3C4658">Thanks for applying! Our recruiting team will call you to talk about open positions.</p>
+<div><button type="button" data-action="closeModal" style="min-height: 52px; padding: 0 28px; border-radius: 999px; background: #C9A060; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; cursor: pointer">Close</button></div>
+</div>
+</div>
+<div data-if="jobNotSent" style="display: contents">
+<form data-form="job" style="display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-size: 17px; color: #4B5466">Join our team of home health aides, personal care aides, nurses and LPNs. It only takes a minute.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="j-first" style="font-weight: 600; font-size: 16px">First name</label>
+<input id="j-first" name="first" type="text" autocomplete="given-name" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="j-last" style="font-weight: 600; font-size: 16px">Last name</label>
+<input id="j-last" name="last" type="text" autocomplete="family-name" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="j-phone" style="font-weight: 600; font-size: 16px">Phone</label>
+<input id="j-phone" name="phone" type="tel" autocomplete="tel" required style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="flex: 1 1 140px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="j-zip" style="font-weight: 600; font-size: 16px">ZIP code</label>
+<input id="j-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="j-email" style="font-weight: 600; font-size: 16px">Email</label>
+<input id="j-email" name="email" type="email" autocomplete="email" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="j-cert" style="font-weight: 600; font-size: 16px">Are you certified?</label>
+<select id="j-cert" name="cert" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+<option>Yes, PCA</option>
+<option>Yes, HHA</option>
+<option>Yes, both PCA and HHA</option>
+<option>Yes, RN license</option>
+<option>Yes, LPN license</option>
+<option>Not yet</option>
+</select>
+</div>
+<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<label for="j-source" style="font-weight: 600; font-size: 16px">How did you hear about us?</label>
+<select id="j-source" name="source" style="width: 100%; min-height: 52px; padding: 12px 14px; border: 1.5px solid #8A8170; border-radius: 12px; font-family: inherit; font-size: 17px; color: #031935; background: #FFFFFF">
+<option>Indeed</option>
+<option>Care.com</option>
+<option>Facebook or Instagram</option>
+<option>Friend or family</option>
+<option>Google search</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="j-certfile" style="font-weight: 600; font-size: 16px">Upload your certification or license (PCA, HHA, RN or LPN)</label>
+<input id="j-certfile" name="certification" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required style="width: 100%; min-height: 56px; padding: 14px; border: 1.5px dashed #8A8170; border-radius: 12px; font-family: inherit; font-size: 16px; color: #031935; background: #faf6ef; cursor: pointer">
+<span style="font-size: 14px; color: #4B5466">PDF, Word document or a photo of your certificate</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="j-resume" style="font-weight: 600; font-size: 16px">Upload your resume (optional)</label>
+<input id="j-resume" name="resume" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" style="width: 100%; min-height: 56px; padding: 14px; border: 1.5px dashed #8A8170; border-radius: 12px; font-family: inherit; font-size: 16px; color: #031935; background: #faf6ef; cursor: pointer">
+<span style="font-size: 14px; color: #4B5466">PDF, Word document or a photo</span>
+</div>
+<div><button type="submit" style="min-height: 56px; padding: 0 36px; border-radius: 999px; background: #C9A060; color: #031935; border: 0; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; font-size: 17px; cursor: pointer">Submit application</button></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+/* Form delivery: paste your form service address between the quotes below
+   (for example a Formspree or Web3Forms endpoint). While it is empty, the
+   forms show the thank-you message but do not send anything. */
+var FORM_ENDPOINT = "";
+var FORM_EXTRA_FIELDS = {}; /* e.g. {"access_key": "..."} for Web3Forms */
+
+(function () {
+  var state = { menu: null, modal: null, mainSent: false, careSent: false, jobSent: false };
+  var flags = function () {
+    return {
+      servicesOpen: state.menu === 'services', careersOpen: state.menu === 'careers',
+      careOpen: state.modal === 'care', jobOpen: state.modal === 'job',
+      mainSent: state.mainSent, mainNotSent: !state.mainSent,
+      careSent: state.careSent, careNotSent: !state.careSent,
+      jobSent: state.jobSent, jobNotSent: !state.jobSent
+    };
+  };
+  function render() {
+    var f = flags();
+    document.querySelectorAll('[data-if]').forEach(function (el) { el.hidden = !f[el.getAttribute('data-if')]; });
+    document.querySelectorAll('[data-expanded]').forEach(function (el) { el.setAttribute('aria-expanded', f[el.getAttribute('data-expanded')] ? 'true' : 'false'); });
+    document.body.style.overflow = state.modal ? 'hidden' : '';
+  }
+  function set(patch) { for (var k in patch) state[k] = patch[k]; render(); }
+  var lastOpener = null;
+  var actions = {
+    toggleServices: function () { set({ menu: state.menu === 'services' ? null : 'services' }); },
+    toggleCareers: function () { set({ menu: state.menu === 'careers' ? null : 'careers' }); },
+    closeMenu: function () { set({ menu: null }); },
+    openCare: function (el) { lastOpener = el; set({ modal: 'care', menu: null, careSent: false }); focusDialog('care-title'); },
+    openJob: function (el) { lastOpener = el; set({ modal: 'job', menu: null, jobSent: false }); focusDialog('job-title'); },
+    closeModal: function () { set({ modal: null }); if (lastOpener) { lastOpener.focus(); lastOpener = null; } },
+    resetMain: function () { set({ mainSent: false }); }
+  };
+  function focusDialog(id) {
+    setTimeout(function () { var h = document.getElementById(id); var d = h && h.closest('[role="dialog"]');
+      var first = d && d.querySelector('input, select, textarea, button'); if (first) first.focus(); }, 30);
+  }
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-action]');
+    if (el) { var fn = actions[el.getAttribute('data-action')]; if (fn) fn(el); return; }
+    if (state.menu && !e.target.closest('nav[aria-label="Main"]')) set({ menu: null });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { if (state.modal) actions.closeModal(); else if (state.menu) set({ menu: null }); }
+  });
+  var NAMES = { main: 'Contact form', care: 'Request care', job: 'Caregiver application' };
+  document.querySelectorAll('form[data-form]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var which = form.getAttribute('data-form');
+      var done = function () { var p = {}; p[which + 'Sent'] = true; set(p); form.reset(); };
+      if (!FORM_ENDPOINT) { done(); return; }
+      var data = new FormData(form);
+      data.append('form', NAMES[which] || which);
+      data.append('subject', 'New website submission: ' + (NAMES[which] || which));
+      for (var k in FORM_EXTRA_FIELDS) data.append(k, FORM_EXTRA_FIELDS[k]);
+      var btn = form.querySelector('button[type="submit"]'); var label = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      fetch(FORM_ENDPOINT, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); done(); })
+        .catch(function () { alert('Sorry, something went wrong sending your form. Please call us at (845) 604-3638.'); })
+        .then(function () { if (btn) { btn.disabled = false; btn.textContent = label; } });
+    });
+  });
+  render();
+})();
+</script>
+</body>
+</html>
